@@ -6,8 +6,10 @@ Pod::Spec.new do |s|
   s.authors = "Dropbox"
   s.source = :http, "https://www.dropbox.com/static/developers/dropbox-ios-sdk-1.3.13.zip"
   s.platforms = :ios, '5.0'
+
   s.source_files = "DropboxSDK/Classes/*.{h,m}"
   s.preserve_paths = "DropboxSDK.framework"
+
   s.license = {
     "type" => "Copyright",
     "file" => "dropbox-ios-sdk-1.3.13/LICENSE"
