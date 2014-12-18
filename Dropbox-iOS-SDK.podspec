@@ -4,19 +4,16 @@ Pod::Spec.new do |s|
   s.summary = "The Dropbox SDK for iOS."
   s.homepage = "https://www.dropbox.com/developers/reference/sdk"
   s.authors = "Dropbox"
-  s.source = {
-      "http" => "https://www.dropbox.com/static/developers/dropbox-ios-sdk-1.3.13.zip"
-  }
   s.platforms = :ios, '5.0'
-  s.source_files = "dropbox-ios-sdk-1.3.13/DropboxSDK/**/*.{h,m}"
-  s.preserve_paths = "dropbox-ios-sdk-1.3.13/DropboxSDK.framework"
+  s.source_files = "DropboxSDK/**/*.{h,m}"
+  s.preserve_paths = "DropboxSDK.framework"
   s.license = {
     "type" => "Copyright",
-    "file" => "dropbox-ios-sdk-1.3.13/LICENSE"
+    "file" => "LICENSE"
   }
   s.frameworks = ["Security", "QuartzCore", "DropboxSDK"]
   s.xcconfig = {
-    "FRAMEWORK_SEARCH_PATHS" => "\"${PODS_ROOT}/Dropbox-iOS-SDK/dropbox-ios-sdk-1.3.13\""
+    "FRAMEWORK_SEARCH_PATHS" => "\"${PODS_ROOT}/Dropbox-iOS-SDK/\""
   }
   s.requires_arc = false
 end
